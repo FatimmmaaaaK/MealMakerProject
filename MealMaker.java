@@ -71,7 +71,7 @@ public class MealMaker {
     }
 
     public static int chooseRice(Scanner input) {
-        System.out.println("What type of rice would you like to add to your Burrito? (white or brown)");
+        System.out.println("\nWhat type of rice would you like to add to your Burrito? (white or brown)");
         String choice = input.nextLine();
         setRiceChoice(choice);
 
@@ -86,7 +86,7 @@ public class MealMaker {
             }
     }
     public static int chooseBeans(Scanner input) {
-        System.out.println("What type of beans would you like? (black, pinto, or refried)");
+        System.out.println("\nWhat type of beans would you like? (black, pinto, or refried)");
         String choice = input.nextLine();
         setBeansChoice(choice);
 
@@ -105,7 +105,7 @@ public class MealMaker {
             }
         }
     public static int chooseMeat(Scanner input) {
-        System.out.println("What type of meat would you like? (chicken, beef, pork, or tofu)");
+        System.out.println("\nWhat type of meat would you like? (chicken, beef, pork, or tofu)");
         String choice = input.nextLine();
         setMeatChoice(choice);
     
@@ -126,7 +126,7 @@ public class MealMaker {
         }
     }
     public static int chooseToppings(Scanner input) {
-        System.out.println("What type of toppings would you like? (guacamole, cheese, or sour cream)");
+        System.out.println("\nWhat type of toppings would you like? (guacamole, cheese, or sour cream)");
         String choice = input.nextLine();
         setToppingsChoice(choice);
     
@@ -140,13 +140,13 @@ public class MealMaker {
             case "none":
                 return 0;
             default:
-            System.out.println("Hmm I didn't quite understand what you'd like. Try again, or if you would not like any meat, you can add some extras to your meal a little later to make it yummy!");
-            return chooseMeat(input);
+            System.out.println("Hmm I didn't quite understand what you'd like. Try again, please");
+            return chooseToppings(input);
         }
     }
 
     public static int chooseTaco(Scanner input) {
-        System.out.println("Which taco would you like? Al pastor,steak,chicken,pork,or shrimp");
+        System.out.println("\nWhich taco would you like? Al pastor,steak,chicken,pork,or shrimp");
         String choice = input.nextLine();
         setTacoChoice(choice);
 
@@ -162,7 +162,7 @@ public class MealMaker {
             case "shrimp":
                 return 85;
         default:
-            System.out.println("Hmm I didn't quite understand what you'd like. Try again,please");
+            System.out.println("\nHmm I didn't quite understand what you'd like. Try again,please");
             return chooseTaco(input);
         }
 
